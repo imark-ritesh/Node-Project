@@ -25,7 +25,7 @@ router.get('/admin/forgot', function(req, res, next) {
 
 
 router.get('/admin', function(req, res, next) {
-  res.sendFile(path.resolve('views/admin/index.html'));
+  res.render('admin/index', { title: 'Admin | Dashboard' });
 });
 
 module.exports = router;
